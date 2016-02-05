@@ -17,7 +17,7 @@
 - API request is sent to generate a short URL
     - `/api/getShortId?url={url}`
 - `url` is added to database and its row ID (integer) is selected.
-- Row ID is encoded to a base-64 string
+- Row ID is encoded to a base-62 string
 - Encoded value is used as the short URL.
 
 ### Retrieving the long URL
