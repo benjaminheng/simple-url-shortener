@@ -1,0 +1,38 @@
+.content {
+    margin: $spacing-unit 0px;
+    text-align: center;
+}
+
+.output-text {
+    font-size: 1.3em;
+
+    .faded {
+        color: #BBB;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+
+    input {
+        flex-grow: 1;
+        max-width: 500px;
+        height: 35px;
+        padding: 0px 10px;
+        font-size: 1.1em;
+    }
+}
+
+.buttons-wrapper {
+    margin: $spacing-unit 0px;
+
+    button {
+        height: 35px;
+        font-size: 1.1em;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
