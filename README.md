@@ -10,6 +10,22 @@
     - One limitation of this method is that shortened URLs are somewhat predictable (`aaa` will be `aab` next)
     - I [initialize the autoincrement](https://github.com/benjaminheng/simple-url-shortener/blob/2bd6e3e33da6fd550e13c7c1a785c6cf440aff7b/app/server/server.js#L20) to `1234567` so it won't start generating from 1='a', 2='b' and so on.
 
+## Application flow
+
+### Generating a short URL 
+
+- API request is sent to generate a short URL
+    - `/api/getShortId?url={url}`
+- `url` is added to database and its row ID (integer) is selected.
+- Row ID is encoded to a base-64 string
+- Encoded value is used as the short URL.
+
+### Retrieving the long URL
+
+- API request is sent to retrieve the long URL
+- The short URL is decoded to get the row ID
+- The row ID is used to select the long URL
+
 ## Usage
 
 ```
