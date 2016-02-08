@@ -1,5 +1,7 @@
 # Simple URL Shortener
 
+Technical test for Carousell interview.
+
 **Notable files:** [server.js](https://github.com/benjaminheng/simple-url-shortener/blob/master/app/server/server.js), [App.js](https://github.com/benjaminheng/simple-url-shortener/blob/master/app/common/containers/App.js), [urlService.js](https://github.com/benjaminheng/simple-url-shortener/blob/master/app/common/utils/urlService.js)
 
 ## Technical details
